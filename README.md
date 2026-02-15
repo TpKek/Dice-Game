@@ -1,32 +1,76 @@
-# 🎲 Dicee Challenge
+# Dicee Challenge
 
-A simple, fun web-based dice game that decides a winner every time you refresh the page. This project focuses on DOM manipulation and JavaScript logic to create a dynamic user experience.
+A fun, interactive two-player dice game built with vanilla JavaScript. Each page refresh rolls two dice and instantly determines a winner based on random number generation.
 
-## 🚀 How It Works
+## How It Works
 
-When the page is refreshed:
+When the page loads or refreshes:
 
-1. Two random numbers between 1 and 6 are generated.
-2. The `src` attribute of the dice images is updated to match the random numbers.
-3. The title (`h1`) changes to announce the winner (Player 1, Player 2, or a Draw) based on which roll was higher.
+1. Two random numbers between 1 and 6 are generated
+2. Dice images update to match the random numbers
+3. The winner is announced in the heading:
+   - Player 1 Wins! (with flag emoji)
+   - Player 2 Wins! (with flag emoji)
+   - Draw! (if both dice show the same number)
 
-## 🛠️ Technologies Used
+## What I Learned
 
-- **JavaScript (ES6):** Logic for random number generation and DOM selection.
-- **CSS3:** Custom styling including Google Fonts and a dark-mode aesthetic.
-- **HTML5:** Semantic structure for the game layout.
+This project strengthened my understanding of fundamental JavaScript concepts:
 
-## 📸 Preview
+- **DOM Manipulation**: Using `querySelector` and `setAttribute` to dynamically update HTML elements
+- **Random Number Generation**: Implementing `Math.random()` and `Math.floor()` for dice rolls
+- **Conditional Logic**: Writing if-else statements to determine game outcomes
+- **JavaScript Events**: Understanding page load events and script execution timing
+- **CSS Styling**: Creating a dark-themed, visually appealing game interface
 
-The game uses a responsive layout where two dice are displayed side-by-side.
+## Tech Stack
 
-- **Player 1 Wins:** 🚩 Player 1 Wins!
-- **Player 2 Wins:** Player 2 Wins! 🚩
-- **Draw:** Draw!
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## 📂 Project Structure
+| Technology | Purpose                           |
+| ---------- | --------------------------------- |
+| HTML5      | Page structure and layout         |
+| CSS3       | Styling, Google Fonts, dark theme |
+| JavaScript | Game logic and DOM updates        |
 
-- `dicee.html` - The main entry point.
-- `styles.css` - Custom styles and layout.
-- `index.js` - The logic behind the dice rolls.
-- `images/` - Contains the six dice faces (`dice1.png` to `dice6.png`).
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/TpKek/Dice-Game.git
+   cd Dice-Game
+   ```
+
+2. Open in browser:
+   - Simply open `dicee.html` in any modern web browser
+   - Or use a local server: `python -m http.server 8000`
+
+## Usage
+
+- Open the page to see the dice roll automatically
+- Refresh the page (F5) to roll again
+- Challenge a friend to see who wins!
+
+## Project Structure
+
+```
+Dice-Game/
+ dicee.html       # Main HTML file
+ styles.css       # CSS styling
+ index.js         # Game logic
+ images/          # Dice face images (dice1-6.png)
+ README.md        # This file
+```
+
+## Author
+
+**Bertin Dreyer**
+
+- GitHub: [@TpKek](https://github.com/TpKek)
+
+---
+
+Made with fun and learning in mind!
